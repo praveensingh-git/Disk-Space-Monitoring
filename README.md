@@ -62,7 +62,7 @@ iv► Add your Gmail credentials:
 ```
 [smtp.gmail.com]:587 your-email@gmail.com:your-app-password
 ```
-***⚠️ For Gmail, you must generate an App Password (from your `Google Account → Security → App Passwords`)***
+***⚠️ For Gmail, you must generate an App Password 🔑 (from your `Google Account → Security → App Passwords`)***
 
 v► Secure the file and build the hash:
 ```
