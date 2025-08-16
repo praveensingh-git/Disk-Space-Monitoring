@@ -1,7 +1,7 @@
 #!/bin/bash
 # ===========================
-TO="praveensuryavanshi021@gmail.com"  
-FROM="xdfpss@gmail.com"                
+TO="example@gmail.com"  
+FROM="test@gmail.com"                
 THRESHOLD=80                           
 # ===========================
 
