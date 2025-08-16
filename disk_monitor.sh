@@ -10,7 +10,6 @@ REPORT=$(df -H -x tmpfs -x devtmpfs)
 MAX_USAGE=$(echo "$REPORT" | awk 'NR>1 {gsub("%","",$5); print $5}' | sort -n | tail -1)
 DATE=$(date)
 
-# Build HTML message depending on usage
 if [[ $MAX_USAGE -ge $THRESHOLD ]]; then
     SUBJECT="🚨 Disk Space Alert on $(hostname) 🚨"
     MESSAGE="
