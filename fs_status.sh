@@ -19,7 +19,6 @@ REPORT=$(df -h --output=source,size,used,avail,pcent,target | egrep -v "tmpfs|ud
 
 MAX_USAGE=$(echo "$REPORT" | awk 'NR>1 {gsub("%","",$5); print $5}' | sort -n | tail -1)
 
-# Build the email body
 if [[ $MAX_USAGE -ge $THRESHOLD ]]; then
     STATUS="⚠️ WARNING: High Disk Usage Detected!"
 else
@@ -45,9 +44,8 @@ Disk Monitor Bot Chitti 🤖
 EOF
 )
 
-# Send the email
 echo "$BODY" | mail -s "[$HOST] Disk Report - $STATUS" "$TO"
 
-# Also print to terminal (for testing/logs)
+#print to terminal (for testing/logs)
 echo "$BODY"
 
