@@ -4,11 +4,9 @@
 # Author: NedStark (Kali Linux)
 # Description: Sends an email report of disk usage
 # =========================================
-: <<'END_COMMENT'
-
-
-                
-END_COMMENT
+#
+#
+#
 TO="praveensuryavanshi021@gmail.com"
 
 # Disk usage
